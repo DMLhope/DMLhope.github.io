@@ -3,7 +3,9 @@ layout: post
 title: 建站教程
 date: 2019-02-26
 categories: linux
-tags:  
+tags: new
+header-img: assets/img/4.jpeg
+ 
 ---
 ## 初次建站教程
 ### 纪念一下，刚架好网站
