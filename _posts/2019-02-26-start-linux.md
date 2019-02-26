@@ -3,10 +3,10 @@ layout: post
 title: 建站教程
 date: 2019-02-26
 categories: linux
-tags: new
-header-img: assets/img/4.jpeg
- 
+tags: 网站
+cover: '../../../assets/img/4.jpeg'
 ---
+
 ## 初次建站教程
 ### 纪念一下，刚架好网站
   说实话其实根本不知道写啥,这也挺搞笑的费了老大劲把这页面弄好结果不知道干啥...
