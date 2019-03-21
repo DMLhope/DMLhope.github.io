@@ -4,7 +4,7 @@ title: git 常用命令学习整理
 date: 2019-03-21
 categories: 常用命令
 tags: git
-cover: '../../../assets/img/20190321-1.jpeg'
+cover: '../../../assets/img/20190321-1.jpg'
 ---
 
 
