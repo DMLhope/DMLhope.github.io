@@ -1,10 +1,10 @@
 ---
 layout: post
 title: nodejs，npm，electron配置环境踩坑记录
-date: 2019-03-21
+date: 2019-03-24
 categories: web
 tags: electron
-cover: '../../../assets/img/20190324.jpg
+cover: '../../../assets/img/20190324.jpg'
 ---
 
 
@@ -42,6 +42,7 @@ cover: '../../../assets/img/20190324.jpg
 
 内容随便，这里我填了一个HTML5的模板：
 
+
 ``` 
 <!DOCTYPE html>
 <html lang="en">
@@ -57,7 +58,9 @@ cover: '../../../assets/img/20190324.jpg
 </html>
 ```
 
+
 接下来创` main.js`文件，内容如下:
+
 
 ``` 
  //electron对象的引用
@@ -78,11 +81,13 @@ cover: '../../../assets/img/20190324.jpg
  })
 ```
 
+
 然后在命令行里输入` npm init --yes`
 
 之后可以发现多了一个` package.json`文件
 
 内容如下：
+
 
 ``` 
 {
@@ -102,6 +107,7 @@ cover: '../../../assets/img/20190324.jpg
 }
 ```
 
+
 尤其要注意，看看你的` main`是否指向` main.js`。
 
 之后就可以运行试试看了：
@@ -112,31 +118,41 @@ cover: '../../../assets/img/20190324.jpg
 
 对方向你使用Error攻击：
 
+
 ``` 
 App threw an error during load
 Error: Couldn't find preset "env" relative to directory...
 ```
 
+
 效果拔群！你的心情变糟了！
 
 这边使用浏览器google，找到链接：https://blog.csdn.net/hzzou/article/details/76650241
 
-去吧命令行，使用链接中的` cnpm install babel-preset-env --save-dev`+ ` electron .`攻击！(就是依次输入这两条命令)
+去吧命令行，使用链接中的` cnpm install babel-preset-env --save-dev`
+ 
+` electron .` 攻击！(就是依次输入这两条命令)
 
 好像有效果了，对方不报之前的错了
 
 对方再次向你使用ERROR攻击：
+
 
 ``` 
 App threw an error during load
 Error: Couldn't find preset "react" relative to directory ...
 ```
 
+
 效果拔群！你的心情变得更糟了！
 
-再次使用浏览器google，找到链接：https://blog.csdn.net/fenglailea/article/details/80068101
+
+再次使用浏览器google，
+
+找到链接:https://blog.csdn.net/fenglailea/article/details/80068101
 
 去吧命令行，使用链接中的
+
 
 ``` 
 npm install react react-dom 
@@ -144,16 +160,20 @@ npm install babel-core babel-loader babel-preset-react
 npm install webpack 
 electron .
 ```
+
+
 攻击！
 
 好像又有效果了，对方不报之前的错了
 
 对方又TM向你扔了个ERROR
 
+
 ``` 
 App threw an error during load
 Error: Cannot find module 'election'
 ```
+
 
 效果拔群！结合你今天之前折腾其他东西抓狂的经历，你已经快崩溃了。
 
