@@ -76,7 +76,7 @@ cover: '../../../assets/img/20200213.jpg'
   + 例2:    grep 'm.*c' 文件名    //包含m和c且m和c之间长度为任意且字符任意的字符串
   + 例3:    grep '\bm[a-z]*c\b' 文件名  //包含m和c且m和c之间长度为任意且字符在a-z之间的任意的字符串
 #### 逻辑的表示
-+ "| " :   逻辑或
++ "|" :   逻辑或
   + 例1：grep 'bin/\(false\|true\)' 文件名 //匹配bin/true或bin/false
 
 
