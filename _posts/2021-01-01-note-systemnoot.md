@@ -4,7 +4,7 @@ title: 系统启动流程
 date: 2021-01-01
 categories: note linux
 tags: system boot
-cover: ''
+cover: '../../../assets/img/20210102.jpg'
 ---
 
 # 启动流程
